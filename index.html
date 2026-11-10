@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Time Zone Planner</title>
+   <!-- CSS FILE --> 
+  <link rel="stylesheet" href="style.css">
+  <!-- FONTS --> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+</head>
+<body>
+<div class="wrap">
+  <h1>Time Zone Planner</h1>
+  <div class="bar">
+    <div class="line">
+      <label>Add time zone <input type="text" id="tzin" list="tzlist" placeholder="e.g. Tokyo, New York, PST" autocomplete="off"></label>
+      <datalist id="tzlist"></datalist>
+      <button id="add" class="primary">Add</button>
+    </div>
+    <div class="line">
+      <label>Jump to date <input type="date" id="date"></label>
+      <button id="now" class="live">Back to live</button>
+    </div>
+  </div>
+  <div class="hint" id="msg" style="margin:-4px 0 8px"></div>
+  <div class="tablewrap" id="rows"></div>
+  <div class="hint" id="hint">Live mode. Click any column to highlight the same moment across all zones. Drag the ⋮⋮ handle to reorder rows.</div>
+  <div class="started" aria-labelledby="gs-title">
+    <h2 id="gs-title">Let's Get in Sync</h2>
+    <ul class="steps">
+      <li><span class="n">1</span><span>Add time zones in the box above, remove them with &times;, or drag the &#8942;&#8942; handle to reorder. The top row is your home zone.</span></li>
+      <li><span class="n">2</span><span>Click any hour column to compare the same moment across all zones.</span></li>
+      <li><span class="n">3</span><span>Choose 12h or 24h under each city to change how its time is shown.</span></li>
+      <li><span class="n plus">+</span><span>Your zones and format choices are saved in your browser. No sign-in needed.</span></li>
+    </ul>
+  </div>  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
