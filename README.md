@@ -3,6 +3,7 @@
 A lightweight web tool that helps you check and compare time zones at a glance.
 It starts with the Philippines (PHT) and Central European Time (CET/CEST), and you
 can add any other time zone.
+<img width="1122" height="669" alt="image" src="https://github.com/user-attachments/assets/d34d9eba-a7f9-4d72-a55a-09c655189560" />
 
 ## Features
 - Compare time zones in one table, with the same hour lined up across every row
